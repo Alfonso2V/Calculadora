@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './styles/styleNumber.css'
 
 const Number = ({ number, childClicked }) => {
     return (
         <>
-            <button onClick={() => childClicked(number)} >{number}</button>
+            <button className={number === "0" ? "cero" : "numberN"} onClick={() => childClicked(number)} >{number}</button>
 
         </>
     )

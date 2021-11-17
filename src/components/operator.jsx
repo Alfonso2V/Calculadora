@@ -8,7 +8,7 @@ const Operator = ({ operator, operatorClicked }) => {
 
     return (
         <>
-            <button onClick={() => operatorClicked(op)} >{operator}</button>
+            <button className={operator === "AC" ? "AC" : "OperatorN"} onClick={() => operatorClicked(op)} >{operator}</button>
         </>
     )
 }
